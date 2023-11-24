@@ -47,6 +47,11 @@ try
             biggerThanValue);
 
 
+        var sumOfM = employees.Where(p => p.Name.ToUpper()[0] == 'M').Sum(p => p.Salary);
+
+        Console.WriteLine("Sum of salary of people whose name starts with 'M': " + sumOfM.ToString("F2", CultureInfo.InvariantCulture));
+
+
 
     }
 
